@@ -1,4 +1,4 @@
-import { Resume } from './resume';
+import { Resume } from './Resume/Resume';
 
 export const App = () => {
   return (

@@ -1,9 +1,9 @@
-export const SoftSkills = ({ softskills }) => {
+export const Skills = ({ skills, className }) => {
   return (
     <ul className="soft_skills_list">
-      {softskills.map((skill, index) => {
+      {skills.map(({ id, skill }) => {
         return (
-          <li key={index} className="soft_skills_item">
+          <li key={id} className={className}>
             <span className="soft_skills_item_text">{skill}</span>
           </li>
         );

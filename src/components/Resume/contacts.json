@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "name": "Volodymyr Labunets",
+      "tel": "+380964978385",
+      "mailto": "vplabunets@gmail.com",
+      "location": "Odesa, Ukraine",
+      "link": "https://github.com/vplabunets",
+      "photoLink": "https://avatars.githubusercontent.com/u/91912993?v=4"
+    }
+  }
+]

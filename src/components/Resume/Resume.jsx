@@ -1,16 +1,11 @@
-import { SoftSkills } from './SoftSkills';
-const softskills = [
-  'Motivation',
-  'Focused on result',
-  'Lean',
-  'Enthusiasm and optimism',
-  'Negotation',
-  'Adaptibility',
-  'Adaptibility',
-  'Analytical thinking',
-  'Critical thinking',
-];
+import { Skills } from '../SoftSkills/Skills';
+import { Contacts } from 'components/Resume/Contacts/Contacts';
+import sskills from './sskills.json';
+import hskills from './hskills.json';
+import contacts from './contacts.json';
+
 export const Resume = () => {
+  // console.log();
   return (
     <>
       {/* <!--Main conatiner--> */}
@@ -183,72 +178,16 @@ export const Resume = () => {
         </div>
         {/* <!--Sidebar section--> */}
         <aside className="sidebar_section">
-          {/* <img src="" width="370" alt="my photo" /> */}
-          <div className="contacts_section">
-            {/* <!--Contacts section--> */}
-            <h3 className="sidebar_title">Contacts</h3>
-            <div>
-              <span className="contacts_section_type">C:</span>
-              <a className="contacts_section_link" href="tel:+380964978385">
-                +380 96 497 83 85
-              </a>
-            </div>
-            <div>
-              <span className="contacts_section_type">E:</span>
-              <a
-                className="contacts_section_link"
-                href="mailto:vplabunets@gmail.com"
-              >
-                vplabunets@gmail.com
-              </a>
-            </div>
-            <div>
-              <span className="contacts_section_type">M:</span>
-              <a className="contacts_section_link">Odesa, Ukraine</a>
-            </div>
-            <div>
-              <span className="contacts_section_type">E:</span>
-              <a
-                className="contacts_section_link"
-                href="https://github.com/vplabunets"
-              >
-                github.com/vplabunets
-              </a>
-            </div>
-          </div>
+          <Contacts contacts={contacts[0]} />
           {/* <!--Tech skills section--> */}
           <div className="tech_skills_section">
             <h3 className="sidebar_title">Tech Skills</h3>
-            <ul className="tech_skills_list">
-              <li className="tech_skills_item">
-                <span className="tech_skills_item_text">HTML/CSS/SASS</span>
-              </li>
-              <li className="tech_skills_item">
-                <span className="tech_skills_item_text">
-                  Responsive/Adaptive design
-                </span>
-              </li>
-              <li className="tech_skills_item">
-                <span className="tech_skills_item_text">GIT</span>
-              </li>
-              <li className="tech_skills_item">
-                <span className="tech_skills_item_text">React</span>
-              </li>
-              <li className="tech_skills_item">
-                <span className="tech_skills_item_text">REST API</span>
-              </li>
-              <li className="tech_skills_item">
-                <span className="tech_skills_item_text">Webpack Parcel</span>
-              </li>
-              <li className="tech_skills_item">
-                <span className="tech_skills_item_text">Node.js</span>
-              </li>
-            </ul>
+            <Skills skills={hskills} className={'tech_skills_item'} />
           </div>
           {/* <!--Soft skills section--> */}
           <div className="soft_skills_section">
             <h3 className="sidebar_title">Soft Skills</h3>
-            <SoftSkills softskills={softskills} />
+            <Skills skills={sskills} className={'soft_skills_item'} />
           </div>
         </aside>
       </div>
