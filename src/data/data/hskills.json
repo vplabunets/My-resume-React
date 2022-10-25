@@ -1,0 +1,11 @@
+[
+  { "id": 11, "skill": "HTML/CSS/SASS" },
+  { "id": 21, "skill": "Responsive/Adaptive design" },
+  { "id": 31, "skill": "GIT" },
+  { "id": 41, "skill": "React" },
+  { "id": 51, "skill": "REST API" },
+  { "id": 61, "skill": "Webpack Parcel" },
+  { "id": 71, "skill": "Adaptibility" },
+  { "id": 81, "skill": "Node.js" },
+  { "id": 91, "skill": "XXX" }
+]

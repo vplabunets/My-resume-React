@@ -1,0 +1,49 @@
+[
+  {
+    "id": 111,
+    "user": {
+      "position": "Key Account Manager / Supply Manager",
+      "company": "PI Begemot",
+      "workperiod": "2007 - August 2011",
+      "location": "Ukraine",
+      "duties": [
+        "Negotiation with suppliers /Key Customers",
+        "Sales/Purchases analysys",
+        "Working with claims",
+        "Working with claims"
+      ]
+    }
+  },
+  {
+    "id": 112,
+    "user": {
+      "position": "Sales Manager",
+      "company": "Hilal Aluminium Ukraine LLC",
+      "workperiod": "August 2010 - May 2011",
+      "location": "Ukraine",
+      "duties": [
+        "Working with a large product range",
+        "Regular visits to existing suppliers",
+        "Looking for new clients",
+        "Sales reporting"
+      ]
+    }
+  },
+  {
+    "id": 113,
+    "user": {
+      "position": "Key Account Manager / Supply ManagerDeputy Supply Chain Manager",
+      "company": "Groupe Atlantic",
+      "workperiod": "May 2011 - up to now1",
+      "location": "Ukraine",
+      "duties": [
+        "External and internal logistic",
+        "Purchasing",
+        "Production planning",
+        "Project Management",
+        "Team managment",
+        "Budgeting"
+      ]
+    }
+  }
+]
