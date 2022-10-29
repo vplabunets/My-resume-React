@@ -1,5 +1,5 @@
 export const Skills = ({ skills, className, title, skillCleaner }) => {
-  console.log(skills);
+  // console.log(skills);
   return (
     <div className="soft_skills_section">
       <h3 className="sidebar_title">{title}</h3>

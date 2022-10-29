@@ -1,13 +1,13 @@
 import { Skills } from '../SoftSkills/Skills';
 import { Contacts } from 'components/Contacts/Contacts';
-import sskills from '/Projects/My-resume-React/src/data/data/sskills.json';
-import hskills from '/Projects/My-resume-React/src/data/data/hskills.json';
-import contacts from '/Projects/My-resume-React/src/data/data/contacts.json';
-import workexperience from '/Projects/My-resume-React/src/data/data/workexperience.json';
+import sskills from '/Projects/My-resume-React/src/data/sskills.json';
+import hskills from '/Projects/My-resume-React/src/data/hskills.json';
+import contacts from '/Projects/My-resume-React/src/data/contacts.json';
+import workexperience from '/Projects/My-resume-React/src/data/workexperience.json';
 
 import { Component } from 'react';
 import { EducationSection } from 'components/EducationSection/EducationSection';
-import { WorkExperienceBlock } from 'components/WorkExperinceBlock/WorkExperienceBlock';
+import WorkExperienceBlock from 'components/WorkExperienceBlock/WorkExperienceBlock';
 
 export class Resume extends Component {
   state = { sskills: sskills, hskills: hskills };
@@ -25,7 +25,7 @@ export class Resume extends Component {
     // console.log(this.state.sskills);
   };
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <>
         {/* <!--Main conatiner--> */}
@@ -95,19 +95,7 @@ export class Resume extends Component {
               </ol>
             </div>
             {/* <!--My work experience section--> */}
-            <div className="my_work_experience_section">
-              <h3 className="main_content_title">Professional Experience</h3>
-              {/* {{ workexperience }.map((work, index) => (
-                <WorkExperienceBlock compan={work[index]} />
-              ))} */}
-
-              {/* <!--Company 3--> */}
-              <WorkExperienceBlock compan={workexperience[2]} />
-              {/* <!--Company 2--> */}
-              <WorkExperienceBlock compan={workexperience[1]} />
-              {/* <!--Company 1--> */}
-              <WorkExperienceBlock compan={workexperience[0]} />
-            </div>
+            <WorkExperienceBlock workexperience={workexperience} />
             {/* <!--Education section--> */}
             <EducationSection />
           </div>

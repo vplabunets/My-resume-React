@@ -1,10 +1,13 @@
-export const WorkExperienceBlock = ({ compan }) => {
+export const WorkExperienceItem = ({ compan }) => {
   const { position, company, workperiod, location, duties } = compan.user;
-  console.log(duties);
   return (
     <div className="my_work_experience_company_block">
       <h4 className="my_work_experience_position">
-        {position} <span className="my_work_experience_company">{company}</span>
+        {position}{' '}
+        <span className="my_work_experience_company">
+          {' '}
+          <br /> {company}
+        </span>
       </h4>
       <p className="my_work_experience_period">
         {workperiod} <span className="my_work_experience_devider">|</span>{' '}
@@ -18,11 +21,6 @@ export const WorkExperienceBlock = ({ compan }) => {
             </li>
           );
         })}
-        {/* <li className="my_work_experience_duty">}
-        Negotiation with suppliers /Key Customers
-      </li>
-      <li className="my_work_experience_duty">Sales/Purchases analysys</li>
-      <li className="my_work_experience_duty">Working with claims</li> */}
       </ul>
     </div>
   );

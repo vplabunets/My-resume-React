@@ -1,0 +1,23 @@
+[
+  {
+    "id": 211,
+    "educationalInstitution": "IT School Goit",
+    "speciality": "Full Stack Developer",
+    "educationPeriod": "March 2022 - February 2023",
+    "location": "Ukraine"
+  },
+  {
+    "id": 212,
+    "educationalInstitution": "Odessa National Academy of Food Technology",
+    "speciality": "Master of Production Process Automationt",
+    "educationPeriod": "September 2001 - June 2006",
+    "location": "Ukraine"
+  },
+  {
+    "id": 213,
+    "educationalInstitution": "Odessa National Academy of Food Technology",
+    "speciality": "Operation Management",
+    "educationPeriod": "September 2005 - June 2007",
+    "location": "Ukraine"
+  }
+]
