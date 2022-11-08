@@ -1,9 +1,10 @@
 import EducationItem from 'components/EducationItem/EducationItem';
+import { EducationSectionWrap } from './EducationSection.styled';
 import education from '/Projects/My-resume-React/src/data/education.json';
 
 export const EducationSection = () => {
   return (
-    <div className="my_education_section">
+    <EducationSectionWrap className="my_education_section">
       <h3 className="main_content_title">Education Background</h3>
       {education.map(
         ({
@@ -53,6 +54,6 @@ export const EducationSection = () => {
           <span className="my_education_time_devider">|</span> Ukraine
         </p>
       </div> */}
-    </div>
+    </EducationSectionWrap>
   );
 };

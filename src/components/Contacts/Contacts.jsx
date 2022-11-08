@@ -1,5 +1,6 @@
 import { HiMail, HiLink, HiPhone, HiLocationMarker } from 'react-icons/hi';
-import { ContactsItem } from './ContactsItem/ContactsItem.jsx';
+import { ContactsItem } from '../../ContactsItem/ContactsItem.jsx';
+import { ContactsSection, ContactsTitle } from './Contacts.styled.jsx';
 export const Contacts = ({ contacts }) => {
   return (
     <>
@@ -8,8 +9,8 @@ export const Contacts = ({ contacts }) => {
         width="370"
         alt={contacts.user.name}
       />
-      <div className="contacts_section">
-        <h3 className="sidebar_title">Contacts</h3>
+      <ContactsSection>
+        <ContactsTitle className="sidebar_title">Contacts</ContactsTitle>
         <ContactsItem
           icon={<HiPhone fill="white" />}
           atribute={contacts.user.tel}
@@ -26,7 +27,7 @@ export const Contacts = ({ contacts }) => {
           icon={<HiLink fill="white" />}
           atribute={contacts.user.link}
         />
-      </div>
+      </ContactsSection>
     </>
   );
 };

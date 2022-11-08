@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  EducationPlaceName,
+  EducationSpeciality,
+  EducationPeriod,
+  EducationTime,
+} from './EducationItem.styled';
 
 const EducationItem = ({
   educationalInstitution,
@@ -8,13 +14,13 @@ const EducationItem = ({
 }) => {
   return (
     <div>
-      <h4 className="my_education_place_name">{educationalInstitution}t</h4>
-      <h4 className="my_education_speciality">{speciality}</h4>
-      <p className="my_education_period">
+      <EducationPlaceName>{educationalInstitution}t</EducationPlaceName>
+      <EducationSpeciality>{speciality}</EducationSpeciality>
+      <EducationPeriod>
         {educationPeriod}
-        <span className="my_education_time_devider">|</span>
+        <EducationTime>|</EducationTime>
         {location}
-      </p>
+      </EducationPeriod>
     </div>
   );
 };

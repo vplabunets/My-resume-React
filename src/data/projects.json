@@ -1,0 +1,17 @@
+[
+  {
+    "projectLink": "https://hellenglish.goit.global/",
+    "projectDescription": "A website with a responsive layout. Role: Developer/ Codereviewer. Developed hero section. Reveiwed team members code.",
+    "technologies": ["HTML5", " CSS3"]
+  },
+  {
+    "projectLink": "https://cryptohub.goit.global/",
+    "projectDescription": "Searching for a movie application. Role: Developer / Codereviewer. Developed search menu, pagination, film gallery markup.Reveiwed team members code.",
+    "technologies": ["HTML5", " CSS3", "JavaScrip"]
+  },
+  {
+    "projectLink": "https://kidslike.goit.global/",
+    "projectDescription": "...................",
+    "technologies": ["React.js", "Node.js"]
+  }
+]

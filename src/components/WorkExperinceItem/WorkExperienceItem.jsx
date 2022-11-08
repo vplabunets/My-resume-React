@@ -1,27 +1,40 @@
+import {
+  WorkExperienceCompanyBlock,
+  WorkExperiencePosition,
+  WorkExperienceCompany,
+  WorkExperiencePeriod,
+  WorkExperienceDevider,
+  WorkExperienceDuties,
+  WorkExperienceDuty,
+} from './WorkExperienceItem.styled';
+
 export const WorkExperienceItem = ({ compan }) => {
   const { position, company, workperiod, location, duties } = compan.user;
   return (
-    <div className="my_work_experience_company_block">
-      <h4 className="my_work_experience_position">
+    <WorkExperienceCompanyBlock className="my_work_experience_company_block">
+      <WorkExperiencePosition className="my_work_experience_position">
         {position}{' '}
-        <span className="my_work_experience_company">
+        <WorkExperienceCompany className="my_work_experience_company">
           {' '}
           <br /> {company}
-        </span>
-      </h4>
-      <p className="my_work_experience_period">
-        {workperiod} <span className="my_work_experience_devider">|</span>{' '}
+        </WorkExperienceCompany>
+      </WorkExperiencePosition>
+      <WorkExperiencePeriod className="my_work_experience_period">
+        {workperiod}{' '}
+        <WorkExperienceDevider className="my_work_experience_devider">
+          |
+        </WorkExperienceDevider>{' '}
         {location}
-      </p>
-      <ul className="my_work_experience_duties">
+      </WorkExperiencePeriod>
+      <WorkExperienceDuties className="my_work_experience_duties">
         {duties.map((dutie, index) => {
           return (
-            <li key={index} className="my_work_experience_duty">
+            <WorkExperienceDuty key={index} className="my_work_experience_duty">
               {dutie}
-            </li>
+            </WorkExperienceDuty>
           );
         })}
-      </ul>
-    </div>
+      </WorkExperienceDuties>
+    </WorkExperienceCompanyBlock>
   );
 };

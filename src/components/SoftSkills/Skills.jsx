@@ -1,23 +1,40 @@
-export const Skills = ({ skills, className, title, skillCleaner }) => {
-  // console.log(skills);
+import { Modal } from 'components/Modal/ModalSkillsAdd';
+import { useState } from 'react';
+import {
+  Btn,
+  SkillsItem,
+  SkillsList,
+  SkillsSection,
+  SkillsText,
+  SkillsTitle,
+  SkillsTitleWrap,
+} from './Skills.styled';
+
+export const Skills = ({ skills, title, skillCleaner }) => {
+  const [isModalOpen, setiIsModalOpen] = useState(false);
+  const openModal = () => {
+    setiIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setiIsModalOpen(false);
+  };
   return (
-    <div className="soft_skills_section">
-      <h3 className="sidebar_title">{title}</h3>
-      <span>
-        <button>+</button>
-      </span>
-      <ul className="soft_skills_list">
+    <SkillsSection>
+      <SkillsTitleWrap>
+        <SkillsTitle>{title}</SkillsTitle>
+        <Btn onClick={openModal}>+</Btn>
+        {isModalOpen && <Modal onClose={closeModal} />}
+      </SkillsTitleWrap>
+      <SkillsList>
         {skills.map(({ id, skill }) => {
           return (
-            <li key={id} className={className}>
-              <span className="soft_skills_item_text">{skill}</span>
-              <span>
-                <button onClick={() => skillCleaner(id)}>-</button>
-              </span>
-            </li>
+            <SkillsItem key={id}>
+              <SkillsText>{skill}</SkillsText>
+              <Btn onClick={() => skillCleaner(id)}>-</Btn>
+            </SkillsItem>
           );
         })}
-      </ul>
-    </div>
+      </SkillsList>
+    </SkillsSection>
   );
 };
