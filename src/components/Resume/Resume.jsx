@@ -1,4 +1,3 @@
-import workexperience from '/Projects/My-resume-React/src/data/workexperience.json';
 import { EducationSection } from 'components/EducationSection/EducationSection';
 import WorkExperienceBlock from 'components/WorkExperienceBlock/WorkExperienceBlock';
 import SideBarSection from 'components/SideBarSection/SideBar/SideBar';
@@ -19,7 +18,7 @@ export const Resume = () => {
           {/* <!--My projects section--><a> </a> */}
           <MyProjectsSection />
           {/* <!--My work experience section--> */}
-          <WorkExperienceBlock workexperience={workexperience} />
+          <WorkExperienceBlock />
           {/* <!--Education section--> */}
           <EducationSection />
         </MainContent>

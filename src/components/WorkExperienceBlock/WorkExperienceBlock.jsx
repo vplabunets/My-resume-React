@@ -1,7 +1,8 @@
 import { WorkExperienceItem } from 'components/WorkExperinceItem/WorkExperienceItem';
 import React from 'react';
+import workexperience from '../../data/workexperience.json';
 
-const WorkExperienceBlock = ({ workexperience }) => {
+const WorkExperienceBlock = () => {
   return (
     <div className="my_work_experience_section">
       <h3 className="main_content_title">Professional Experience</h3>
