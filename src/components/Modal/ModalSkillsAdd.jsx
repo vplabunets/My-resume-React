@@ -1,5 +1,4 @@
 import AddSkillForm from 'components/SideBarSection/AddSkillForm/AddSkillForm';
-import { Btn } from 'components/SideBarSection/Skills/Skills.styled';
 import { useEffect } from 'react';
 import { ModalWindow, Overlay } from './ModalSkillsAdd.styled';
 

@@ -1,5 +1,5 @@
 import { Modal } from 'components/Modal/ModalSkillsAdd';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import { SideBarTitle } from '../SideBar/SideBar.styled';
 import {
@@ -22,9 +22,9 @@ export const Skills = ({ title, skills }) => {
     setiIsModalOpen(false);
   };
 
-  const skillAdder = id => {
-    this.setState(prevState => ({}));
-  };
+  // const skillAdder = id => {
+  //   this.setState(prevState => ({}));
+  // };
 
   const skillCleaner = id => {
     console.log(skills);
