@@ -5,8 +5,6 @@ import { Contacts } from 'components/SideBarSection/Contacts/Contacts';
 import { Skills } from 'components/SideBarSection/Skills/Skills';
 import React from 'react';
 import { SideBar } from './SideBar.styled';
-import { useEffect } from 'react';
-import { useState } from 'react';
 
 const SideBarSection = () => {
   return (
