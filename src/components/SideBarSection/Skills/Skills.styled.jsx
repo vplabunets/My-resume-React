@@ -88,14 +88,6 @@ export const SkillsTitleWrap = styled.div`
   margin: 0;
 `;
 
-export const SkillsTitle = styled.h3`
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  color: #fff;
-  margin-right: 10px;
-`;
 export const SkillsList = styled.ul`
   padding: 0 0 0 17px;
   list-style: none;

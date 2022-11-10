@@ -1,16 +1,9 @@
-import AddSkillForm from 'components/AddSkillForm/AddSkillForm';
-import { Btn } from 'components/SoftSkills/Skills.styled';
+import AddSkillForm from 'components/SideBarSection/AddSkillForm/AddSkillForm';
+import { Btn } from 'components/SideBarSection/Skills/Skills.styled';
 import { useEffect } from 'react';
 import { ModalWindow, Overlay } from './ModalSkillsAdd.styled';
 
-// $(document).keyup(function (e) {
-//   if (e.keyCode == 27) {
-//     // escape key maps to keycode `27`
-//     // <DO YOUR WORK HERE>
-//   }
-// });
-
-export const Modal = ({ onClose }) => {
+export const Modal = ({ onClose, skillsxxx, handleSubmit }) => {
   useEffect(() => {
     const xxx = e => {
       console.log(e);
@@ -35,7 +28,11 @@ export const Modal = ({ onClose }) => {
     >
       {/* onClick={e => e.stopPropagation()} */}
       <ModalWindow>
-        <AddSkillForm onClose={onClose} />
+        <AddSkillForm
+          handleSubmit={handleSubmit}
+          skillsxxx={skillsxxx}
+          onClose={onClose}
+        />
       </ModalWindow>
     </Overlay>
   );

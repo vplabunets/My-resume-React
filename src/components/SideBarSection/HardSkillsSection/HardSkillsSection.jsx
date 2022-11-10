@@ -1,4 +1,4 @@
-import { Skills } from 'components/SoftSkills/Skills';
+import { Skills } from 'components/SideBarSection/Skills/Skills';
 import { HardSkillsSection } from './HardSkillsSection.styled';
 import sskills from '/Projects/My-resume-React/src/data/data/sskills.json';
 

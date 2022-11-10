@@ -19,109 +19,85 @@ body {
   background-color: #f5f7fa;
 }
 
-/* My projects section */
-
-/* My work experience section */
-.my_work_experience_company_block {
-  margin: 0 15px 0 0;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
-.my_work_experience_company {
-  color: #fb6d3a;
-}
-.my_work_experience_position {
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0 0 10px 0;
-}
-.my_work_experience_period {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #a8a8a8;
-}
-.my_work_experience_devider {
-  color: #000;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-.my_work_experience_duties {
-  padding: 0 0 0 17px;
-}
-.my_work_experience_duty {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-}
-/*Education section*/
-.my_education_section {
-  margin-top: 50px;
-}
-.my_education_place_name {
-  margin-top: 17px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #fb6d3a;
-}
-.my_education_speciality {
-  margin-top: 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-.my_education_period {
-  margin-top: 15px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #a8a8a8;
-}
-.my_education_time_devider {
-  color: #000;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-/*sidebar section*/
-
-.sidebar_title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  color: #fff;
-  margin-bottom: 10px;
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.tech_skills_section {
-  margin: 50px 0 0 40px;
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
 }
 
-/* contacts section */
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
 
-/* tech skills section */
-.tech_skills_list {
-  padding: 0 0 0 17px;
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
-.tech_skills_item {
-  color: #fb6d3a;
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  list-style: none;
 }
-.tech_skills_item_text {
-  color: #fff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not() {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

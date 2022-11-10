@@ -3,7 +3,7 @@ import {
   EducationPlaceName,
   EducationSpeciality,
   EducationPeriod,
-  EducationTime,
+  EducationDevider,
 } from './EducationItem.styled';
 
 const EducationItem = ({
@@ -14,11 +14,11 @@ const EducationItem = ({
 }) => {
   return (
     <div>
-      <EducationPlaceName>{educationalInstitution}t</EducationPlaceName>
+      <EducationPlaceName>{educationalInstitution}</EducationPlaceName>
       <EducationSpeciality>{speciality}</EducationSpeciality>
       <EducationPeriod>
         {educationPeriod}
-        <EducationTime>|</EducationTime>
+        <EducationDevider> | </EducationDevider>
         {location}
       </EducationPeriod>
     </div>

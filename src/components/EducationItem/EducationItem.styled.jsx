@@ -3,7 +3,8 @@ import styled from 'styled-components';
   margin-top: 50px;
 } */
 export const EducationPlaceName = styled.h4`
-  margin-top: 17px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -11,7 +12,6 @@ export const EducationPlaceName = styled.h4`
   color: #fb6d3a;
 `;
 export const EducationSpeciality = styled.h4`
-  margin-top: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -19,14 +19,15 @@ export const EducationSpeciality = styled.h4`
   color: #000000;
 `;
 export const EducationPeriod = styled.p`
-  margin-top: 15px;
+  display: inline-flex;
+  margin-top: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #a8a8a8;
 `;
-export const EducationTime = styled.p`
+export const EducationDevider = styled.span`
   color: #000;
   font-style: normal;
   font-weight: normal;

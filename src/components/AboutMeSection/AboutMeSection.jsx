@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutme from '../../data/aboutme.json';
 import {
   AboutMeProfessionTitle,
   AboutMeWrap,
@@ -7,20 +8,14 @@ import {
 } from './AboutMeSection.styled';
 
 const AboutMeSection = () => {
+  const { requestedPosition, name, aboutCandidateText } = aboutme;
   return (
-    <div>
-      {' '}
-      <AboutMeWrap>
-        <AboutMeProfessionTitle>Front-End Developer</AboutMeProfessionTitle>
-        <AboutMeTitle>Volodymyr Labunets</AboutMeTitle>
-        <AboutMeProfessionTitle>About Me</AboutMeProfessionTitle>
-        <AboutMeText>
-          Hard-working and detail-oriented Frontend developer seeking an
-          entry-level position to apply my skills in coding, projects developing
-          for company's and my profit.
-        </AboutMeText>
-      </AboutMeWrap>
-    </div>
+    <AboutMeWrap>
+      <AboutMeProfessionTitle>{requestedPosition}</AboutMeProfessionTitle>
+      <AboutMeTitle>{name}</AboutMeTitle>
+      <AboutMeProfessionTitle>About Me</AboutMeProfessionTitle>
+      <AboutMeText>{aboutCandidateText}</AboutMeText>
+    </AboutMeWrap>
   );
 };
 

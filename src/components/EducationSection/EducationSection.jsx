@@ -25,35 +25,6 @@ export const EducationSection = () => {
           );
         }
       )}
-
-      {/* <div>
-        <h4 className="my_education_place_name">IT School Goit</h4>
-        <h4 className="my_education_speciality">Full Stack Developer</h4>
-        <p className="my_education_period">
-          March 2021 - February 2022{' '}
-          <span className="my_education_time_devider">|</span>Ukraine
-        </p>
-
-        <h4 className="my_education_place_name">
-          Odessa National Academy of Food Technology
-        </h4>
-        <h4 className="my_education_speciality">
-          Master of Production Process Automation
-        </h4>
-        <p className="my_education_period">
-          September 2001 - June 2006{' '}
-          <span className="my_education_time_devider">|</span>Ukraine
-        </p>
-
-        <h4 className="my_education_place_name">
-          Odessa National Academy of Food Technology
-        </h4>
-        <h4 className="my_education_speciality">Operation Management</h4>
-        <p className="my_education_period">
-          September 2005 - June 2007{' '}
-          <span className="my_education_time_devider">|</span> Ukraine
-        </p>
-      </div> */}
     </EducationSectionWrap>
   );
 };
