@@ -8,8 +8,8 @@ import {
   WorkExperienceDuty,
 } from './WorkExperienceItem.styled';
 
-export const WorkExperienceItem = ({ compan }) => {
-  const { position, company, workperiod, location, duties } = compan.user;
+export const WorkExperienceItem = ({ workPlace }) => {
+  const { position, company, workperiod, location, duties } = workPlace.user;
   return (
     <WorkExperienceCompanyBlock>
       <WorkExperiencePosition>

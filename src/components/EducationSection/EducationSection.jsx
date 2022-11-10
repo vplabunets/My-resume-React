@@ -1,6 +1,6 @@
 import EducationItem from 'components/EducationItem/EducationItem';
 import { EducationSectionWrap } from './EducationSection.styled';
-import education from '/Projects/My-resume-React/src/data/education.json';
+import education from '../../data/education.json';
 
 export const EducationSection = () => {
   return (
