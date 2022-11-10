@@ -11,28 +11,21 @@ import {
 export const WorkExperienceItem = ({ compan }) => {
   const { position, company, workperiod, location, duties } = compan.user;
   return (
-    <WorkExperienceCompanyBlock className="my_work_experience_company_block">
-      <WorkExperiencePosition className="my_work_experience_position">
-        {position}{' '}
-        <WorkExperienceCompany className="my_work_experience_company">
-          {' '}
+    <WorkExperienceCompanyBlock>
+      <WorkExperiencePosition>
+        {position}
+        <WorkExperienceCompany>
           <br /> {company}
         </WorkExperienceCompany>
       </WorkExperiencePosition>
-      <WorkExperiencePeriod className="my_work_experience_period">
-        {workperiod}{' '}
-        <WorkExperienceDevider className="my_work_experience_devider">
-          |
-        </WorkExperienceDevider>{' '}
+      <WorkExperiencePeriod>
+        {workperiod}
+        <WorkExperienceDevider>|</WorkExperienceDevider>
         {location}
       </WorkExperiencePeriod>
-      <WorkExperienceDuties className="my_work_experience_duties">
+      <WorkExperienceDuties>
         {duties.map((dutie, index) => {
-          return (
-            <WorkExperienceDuty key={index} className="my_work_experience_duty">
-              {dutie}
-            </WorkExperienceDuty>
-          );
+          return <WorkExperienceDuty key={index}>{dutie}</WorkExperienceDuty>;
         })}
       </WorkExperienceDuties>
     </WorkExperienceCompanyBlock>
