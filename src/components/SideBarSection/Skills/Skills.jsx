@@ -22,10 +22,6 @@ export const Skills = ({ title, skills }) => {
     setiIsModalOpen(false);
   };
 
-  // const skillAdder = id => {
-  //   this.setState(prevState => ({}));
-  // };
-
   const skillCleaner = id => {
     console.log(skills);
     console.log(id);
@@ -46,10 +42,6 @@ export const Skills = ({ title, skills }) => {
     console.log(skillsList);
     e.currentTarget.reset();
   };
-
-  // useEffect(() => {
-  //   handleSubmit();
-  // }, [handleSubmit]);
 
   return (
     <SkillsSection>

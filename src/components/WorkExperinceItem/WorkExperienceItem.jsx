@@ -14,9 +14,7 @@ export const WorkExperienceItem = ({ workPlace }) => {
     <WorkExperienceCompanyBlock>
       <WorkExperiencePosition>
         {position}
-        <WorkExperienceCompany>
-          <br /> {company}
-        </WorkExperienceCompany>
+        <WorkExperienceCompany>{company}</WorkExperienceCompany>
       </WorkExperiencePosition>
       <WorkExperiencePeriod>
         {workperiod}

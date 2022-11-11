@@ -1,17 +1,23 @@
 [
   {
-    "projectLink": "https://hellenglish.goit.global/",
-    "projectDescription": "A website with a responsive layout. Role: Developer/ Codereviewer. Developed hero section. Reveiwed team members code.",
-    "technologies": ["HTML5", " CSS3"]
+    "projectName": "Web Studio",
+    "projectLink": "https://vplabunets.github.io/goit-markup-hw-08/",
+    "respository": "https://github.com/vplabunets/goit-markup-hw-08",
+    "projectDescription": "A website(markup) with a responsive layout. Role: Developer. Developed markup.",
+    "technologies": ["HTML", "CSS"]
   },
   {
-    "projectLink": "https://cryptohub.goit.global/",
-    "projectDescription": "Searching for a movie application. Role: Developer / Codereviewer. Developed search menu, pagination, film gallery markup.Reveiwed team members code.",
-    "technologies": ["HTML5", " CSS3", "JavaScrip"]
+    "projectName": "Ice Cream",
+    "projectLink": "https://vplabunets.github.io/Markup-Team-Project/",
+    "respository": "https://github.com/vplabunets/Markup-Team-Project",
+    "projectDescription": "A website with a responsive layout. Role: Developer/ Code reviewed. Developed hero section. Reviewed teammembers code",
+    "technologies": ["HTML", "CSS", "JS", "Parcel"]
   },
   {
-    "projectLink": "https://kidslike.goit.global/",
-    "projectDescription": "...................",
-    "technologies": ["React.js", "Node.js"]
+    "projectName": "Filmoteka",
+    "projectLink": "https://vplabunets.github.io/JS-Team-Project/",
+    "respository": "https://github.com/vplabunets/JS-Team-Project",
+    "projectDescription": "A searching movie application. Role:  Developer / Code reviewer. Developed menu, pagination, film gallery markup. Reviewed team members code.",
+    "technologies": ["HTML", "SASS", "JS", "REST", "API", "AJAX", "Parcel"]
   }
 ]

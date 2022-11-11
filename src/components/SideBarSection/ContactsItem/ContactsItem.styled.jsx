@@ -10,9 +10,10 @@ export const ContactsSectionType = styled.span`
 `;
 
 export const ContactsSectionLink = styled.a`
+  margin-left: 5px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 18x;
   line-height: 24px;
   color: #fff;
 `;

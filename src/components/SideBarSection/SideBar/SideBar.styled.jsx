@@ -12,5 +12,4 @@ export const SideBarTitle = styled.h3`
   font-size: 22px;
   line-height: 27px;
   color: #fff;
-  margin-bottom: 10px;
 `;

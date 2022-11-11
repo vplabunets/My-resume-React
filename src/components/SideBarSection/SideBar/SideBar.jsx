@@ -8,15 +8,13 @@ import { SideBar } from './SideBar.styled';
 
 const SideBarSection = () => {
   return (
-    <div>
-      <SideBar>
-        <Contacts contacts={contacts[0]} />
-        {/* <!--Tech skills section--> */}
-        <Skills skills={hskills} title={'Hard Skills'} />
-        {/* <!--Soft skills section--> */}
-        <Skills skills={sskills} title={'Soft Skills'} />
-      </SideBar>
-    </div>
+    <SideBar>
+      <Contacts contacts={contacts[0]} />
+      {/* <!--Tech skills section--> */}
+      <Skills skills={hskills} title={'Hard Skills'} />
+      {/* <!--Soft skills section--> */}
+      <Skills skills={sskills} title={'Soft Skills'} />
+    </SideBar>
   );
 };
 

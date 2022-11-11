@@ -1,40 +1,40 @@
+import { Section } from 'components/ui.styled';
 import React from 'react';
 import projects from '../../data/projects.json';
 import {
-  ProjectsSection,
   ProjectsBrackets,
   ProjectsLink,
   ProjectsItem,
   ProjectsText,
   ProjectsList,
+  ProjectsTitle,
 } from './MyProjectsSection.styled';
 const MyProjectsSection = () => {
   return (
-    <div>
-      <ProjectsSection>
-        <h3 className="main_content_title">Projects</h3>
-        <ProjectsList>
-          {projects.map((project, index) => {
-            return (
-              <ProjectsItem key={index}>
-                <ProjectsText>
-                  <ProjectsLink
-                    href={project.projectLink}
-                    className="my_projects_link"
-                  >
-                    {project.projectLink}
+    <Section>
+      <ProjectsTitle>Projects</ProjectsTitle>
+      <ProjectsList>
+        {projects.map((project, index) => {
+          return (
+            <ProjectsItem key={index}>
+              <div>
+                <div>
+                  <ProjectsLink href={project.projectLink}>
+                    {project.projectName}
                   </ProjectsLink>
-                  {project.projectDescription}
-                  <ProjectsBrackets>[</ProjectsBrackets>
-                  {project.technologies}
-                  <ProjectsBrackets>]</ProjectsBrackets>
-                </ProjectsText>
-              </ProjectsItem>
-            );
-          })}
-        </ProjectsList>
-      </ProjectsSection>
-    </div>
+                  <ProjectsText>
+                    <ProjectsBrackets>[</ProjectsBrackets>
+                    {project.technologies.join(', ')}
+                    <ProjectsBrackets>]</ProjectsBrackets>
+                  </ProjectsText>
+                </div>
+                <ProjectsText>{project.projectDescription} </ProjectsText>
+              </div>
+            </ProjectsItem>
+          );
+        })}
+      </ProjectsList>
+    </Section>
   );
 };
 

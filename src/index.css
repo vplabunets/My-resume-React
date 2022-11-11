@@ -1,13 +1,13 @@
 @import-normalize; /* bring in normalize.css styles */
 
-/* body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -18,8 +18,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f5f7fa;
 }
-
-code {
+*/ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
@@ -74,10 +73,10 @@ a:not() {
 }
 
 /* Упрощаем работу с изображениями */
-img {
+/* img {
   max-width: 100%;
   display: block;
-}
+} */
 
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {

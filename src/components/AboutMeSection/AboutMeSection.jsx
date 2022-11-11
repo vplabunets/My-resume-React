@@ -1,8 +1,8 @@
 import React from 'react';
 import aboutme from '../../data/aboutme.json';
+import { Section } from 'components/ui.styled';
 import {
   AboutMeProfessionTitle,
-  AboutMeWrap,
   AboutMeText,
   AboutMeTitle,
 } from './AboutMeSection.styled';
@@ -10,12 +10,12 @@ import {
 const AboutMeSection = () => {
   const { requestedPosition, name, aboutCandidateText } = aboutme;
   return (
-    <AboutMeWrap>
+    <Section>
       <AboutMeProfessionTitle>{requestedPosition}</AboutMeProfessionTitle>
       <AboutMeTitle>{name}</AboutMeTitle>
       <AboutMeProfessionTitle>About Me</AboutMeProfessionTitle>
       <AboutMeText>{aboutCandidateText}</AboutMeText>
-    </AboutMeWrap>
+    </Section>
   );
 };
 

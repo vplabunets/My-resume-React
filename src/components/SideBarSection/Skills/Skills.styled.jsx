@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 /* CSS */
 export const Btn = styled.button`
-  align-items: center;
+  margin-left: 5px;
+  vertical-align: center;
   appearance: none;
   background-color: #fff;
   border-radius: 24px;
@@ -42,50 +43,15 @@ export const Btn = styled.button`
     background: #f6f9fe;
     color: #174ea6;
   }
-
-  &:active {
-    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
-      0 8px 12px 6px rgb(60 64 67 / 15%);
-    outline: none;
-  }
-
-  &:focus {
-    outline: none;
-    border: 2px solid #4285f4;
-  }
-
-  &:not(:disabled) {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
-      rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
-  }
-
-  &:not(:disabled):hover {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
-      rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
-  }
-
-  &:not(:disabled):focus {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
-      rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
-  }
-
-  &:not(:disabled):active {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
-      rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
-  }
-  &:disabled {
-    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
-      rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
-  }
 `;
 
-export const SkillsSection = styled.section`
-  margin: 50px 0 0 40px;
+export const SkillsSection = styled.div`
+  margin: 20px 0 0 40px;
 `;
 export const SkillsTitleWrap = styled.div`
   display: flex;
   align-items: center;
-  margin: 0;
+  margin-bottom: 5px;
 `;
 
 export const SkillsList = styled.ul`
@@ -102,7 +68,7 @@ export const SkillsText = styled.p`
   margin: 0;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
   margin-right: 10px;
 `;

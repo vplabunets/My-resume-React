@@ -1,11 +1,12 @@
 import EducationItem from 'components/EducationItem/EducationItem';
-import { EducationSectionWrap } from './EducationSection.styled';
+import { EducationSectionTitle } from './EducationSection.styled';
 import education from '../../data/education.json';
+import { Section } from 'components/ui.styled';
 
 export const EducationSection = () => {
   return (
-    <EducationSectionWrap className="my_education_section">
-      <h3 className="main_content_title">Education Background</h3>
+    <Section>
+      <EducationSectionTitle>Education Background</EducationSectionTitle>
       {education.map(
         ({
           id,
@@ -25,6 +26,6 @@ export const EducationSection = () => {
           );
         }
       )}
-    </EducationSectionWrap>
+    </Section>
   );
 };

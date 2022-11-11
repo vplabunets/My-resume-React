@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
-export const ProjectsSection = styled.div`
-  margin-bottom: 50px;
-`;
 export const ProjectsList = styled.ol`
-  padding: 0 0 0 17px;
+  padding: 0;
 `;
 
 export const ProjectsItem = styled.li`
@@ -14,18 +11,20 @@ export const ProjectsItem = styled.li`
 
 export const ProjectsText = styled.span`
   color: #595959;
+  text-align: left;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  margin-left: 5px;
 `;
 
 export const ProjectsLink = styled.a`
-  color: #595959;
+  color: #fb6d3a;
+  margin-right: 5px;
+  text-decoration: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
 `;
 
@@ -33,6 +32,14 @@ export const ProjectsBrackets = styled.span`
   color: #000;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
+`;
+
+export const ProjectsTitle = styled.h3`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 10px;
 `;

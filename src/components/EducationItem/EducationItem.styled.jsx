@@ -7,15 +7,15 @@ export const EducationPlaceName = styled.h4`
   margin-bottom: 5px;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   color: #fb6d3a;
 `;
 export const EducationSpeciality = styled.h4`
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 19px;
   color: #000000;
 `;
 export const EducationPeriod = styled.p`
@@ -23,8 +23,8 @@ export const EducationPeriod = styled.p`
   margin-top: 10px;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #a8a8a8;
 `;
 export const EducationDevider = styled.span`
@@ -33,4 +33,5 @@ export const EducationDevider = styled.span`
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  margin: 0 5px 0 5px;
 `;
